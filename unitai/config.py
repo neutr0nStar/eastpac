@@ -39,6 +39,8 @@ MODELS: dict[str, dict] = {
         "label": "GPT-6 Luna", "vendor": "OpenAI", "tier": 1, "in": 0.10, "out": 0.50},
     "anthropic/claude-haiku-5.5": {
         "label": "Claude Haiku 5.5", "vendor": "Anthropic", "tier": 1, "in": 0.10, "out": 0.50},
+    "z-ai/glm-5.3": {
+        "label": "GLM 5.3", "vendor": "Z.ai", "tier": 3, "in": 0.07, "out": 1.40},
     "openai/gpt-6.1-terra": {
         "label": "GPT-6.1 Terra", "vendor": "OpenAI", "tier": 2, "in": 1.00, "out": 5.00},
     "anthropic/claude-sonnet-5.5": {
@@ -54,8 +56,8 @@ TIER_NAMES = {1: "Swift", 2: "Balanced", 3: "Frontier"}
 # Mutable at runtime from the AgentForge screen.
 TIER_MODELS: dict[int, str] = {
     1: "deepseek/deepseek-v4.1-flash-1017",
-    2: "openai/gpt-6.1-terra",
-    3: "anthropic/claude-opus-5.5",
+    2: "deepseek/deepseek-v4.1-flash-1017",
+    3: "z-ai/glm-5.3",
 }
 
 # What we compare against: "if every call had gone to the most capable model".

@@ -28,7 +28,7 @@ Needs Python 3.12+ (uv installs it) and Node 20+ (for building and verifying the
 - **Personas** (`unitai/forge.py`): prompt, tier range, optional pinned model. Editable live in the UI.
 - **Profiler**: deterministic score from size, complexity and risk keywords. No LLM call is needed to choose the LLM.
 - **Router**: score → T1 Swift / T2 Balanced / T3 Frontier. Each failed validation escalates one tier.
-- **Models (OpenRouter)**: T1 DeepSeek V4.1 Flash · GPT-6 Luna · Claude Haiku 5.5; T2 GPT-6.1 Terra · Claude Sonnet 5.5; T3 GPT-6.1 Sol · Claude Opus 5.5.
+- **Models (OpenRouter)**: T1 DeepSeek V4.1 Flash · GPT-6 Luna · Claude Haiku 5.5; T2 GPT-6.1 Terra · Claude Sonnet 5.5; T3 GLM 5.3 · GPT-6.1 Sol · Claude Opus 5.5. Defaults: T1 and T2 → DeepSeek V4.1 Flash, T3 → GLM 5.3.
 - **Gateway** (`unitai/gateway.py`): the only path to an LLM. It logs tokens, real cost (`usage.cost` from OpenRouter), latency, tier and escalation for every call.
 - **Replay cache**: identical prompts are replayed from `data/cache/`. Re-runs are free and the demo is deterministic.
 
