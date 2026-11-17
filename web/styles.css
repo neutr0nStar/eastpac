@@ -86,7 +86,7 @@ textarea.code { font: 12.5px/1.6 "JetBrains Mono", monospace; min-height: 360px;
   background: color-mix(in srgb, var(--panel) 70%, transparent); backdrop-filter: blur(12px);
 }
 .brand { display: flex; gap: 10px; align-items: center; color: var(--text); padding: 4px 8px 10px; }
-.brand .eye { width: 34px; height: 34px; }
+.brand .logo { height: 38px; width: auto; }
 .brand b { display: block; font-size: 17px; letter-spacing: .14em; }
 .brand small { display: block; color: var(--faint); font-size: 11px; margin-top: -1px; white-space: nowrap; }
 nav { display: flex; flex-direction: column; gap: 2px; }
