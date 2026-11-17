@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eastpac UNITE</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%237c6cff'/><stop offset='1' stop-color='%2322d3ee'/></linearGradient></defs><path d='M2 16C7 8 11 6 16 6s9 2 14 10c-5 8-9 10-14 10S7 24 2 16z' fill='none' stroke='url(%23g)' stroke-width='2.6'/><circle cx='16' cy='16' r='4.6' fill='url(%23g)'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css" />
+  <link rel="stylesheet" href="/static/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <a class="brand" href="#/">
+        <svg class="eye" viewBox="0 0 32 32" aria-hidden="true">
+          <defs><linearGradient id="eyeg" x1="0" x2="1"><stop offset="0" stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+          <path d="M2 16C7 8 11 6 16 6s9 2 14 10c-5 8-9 10-14 10S7 24 2 16z" fill="none" stroke="url(#eyeg)" stroke-width="2.4"/>
+          <circle cx="16" cy="16" r="4.6" fill="url(#eyeg)"/>
+        </svg>
+        <span><b>Eastpac UNITE</b><small>agentic code migration</small></span>
+      </a>
+      <nav id="nav"></nav>
+      <div class="sidebar-foot" id="sidefoot"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="crumbs" id="crumbs"></div>
+        <button class="live-pill" id="live-pill" title="Agents working right now"></button>
+        <div class="meter" id="meter"></div>
+        <button class="icon-btn" id="toggle-activity" title="Agent activity">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 12h4l3-8 4 16 3-8h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </header>
+      <section class="view" id="view"></section>
+    </main>
+
+    <aside class="activity" id="activity">
+      <div class="activity-head"><span>Agent activity</span><span class="live-dot" id="live-dot"></span></div>
+      <div class="working" id="working"></div>
+      <div class="activity-feed" id="feed"></div>
+    </aside>
+  </div>
+  <div class="toasts" id="toasts"></div>
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

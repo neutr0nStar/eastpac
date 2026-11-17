@@ -1,0 +1,12 @@
+[project]
+name = "unitai"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.163.1",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.34",
+    "uvicorn[standard]>=0.54.0",
+]
